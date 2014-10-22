@@ -104,7 +104,7 @@
         start = getPoint(start);
         end = getPoint(end);
 
-        $el.css("left",start.left).css("top",start.top);
+        $el.css("left",start.left).css("top",start.top).css("z-index",Math.round(Math.random()*100));
 
         $el.animate({
           "left": end.left,
